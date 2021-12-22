@@ -11,21 +11,14 @@ const inquirer = require('inquirer');
 // console.log('Portfoilio complete! Check out index.html to see the output!')
 // })
 
-inquirer
-  .prompt([
+const promptUser = () => {
+ return inquirer.prompt([
     {
       type: 'input',
       name: 'name',
       message: 'What is your name?' 
     }
   ])
-  .then((answers) => {
-    console.log(answers) 
-  })
-  .catch((error) => {
-    if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
-    }
-  });
+}
+
+promptUser().then(answers => console.log(answers))
