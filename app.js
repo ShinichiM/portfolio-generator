@@ -137,9 +137,3 @@ promptUser().then(promptProject).then(portfolioData => {
     console.log('Page created, check out index.html in this directory to see it')
   })
 })
-
-// const pageHTML = generatePage(mockData);
-
-// const {projects, about, ...header} = mockData;
-
-// console.log(projects + ' : ' + about + ' : ' + header);
